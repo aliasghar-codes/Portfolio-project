@@ -1,0 +1,1065 @@
+/* ************** Reset--CSS ************************* */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body, html{
+    width: 100%;
+    height: 100%;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+/* ******************** Reusable--CSS ***************** */
+
+:root{
+    --secondHeading: 4rem;
+    --mainColor: rgb(63, 0, 179);
+}
+
+span{
+    color: var(--mainColor);
+}
+.main-btn{
+    padding: 12px 27px;
+    box-shadow: 7px 6px 15px 1px rgba(99, 86, 86, 0.696);
+    font-weight: bold;
+    background-color: black; 
+    color: rgb(206, 206, 206);
+    border-radius: 5px;
+    transition: all ease .5s;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.main-btn:hover{
+    color: rgb(0, 0, 0);
+    background: rgb(255, 240, 240);
+    border: 1px solid rgb(0, 0, 0);
+}
+.shadow{
+    box-shadow: 4px 3px 15px 3px grey;
+}
+
+/* ************** header--css ************** */
+
+header{
+    display: flex;
+    padding: 0 70px;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+}
+nav .collapse button{
+    margin-left: 60px;
+}
+header .collapse{
+    list-style: none;
+}
+header .collapse li{
+    display: inline-block;
+    margin-left: 40px;
+}
+header .collapse li a{
+    color: rgb(54, 52, 52);
+    transition: .5s ease;
+    font-weight: bold;
+}
+header .collapse li a:hover {
+    color: black;
+    text-decoration: underline;
+}
+header h2 a{
+    font-size: 2rem;
+    font-weight: 900;
+    background-color: rgb(240, 240, 240);
+    border: 1px solid grey;
+    box-shadow: 1px 1px 4px 3px rgba(142, 142, 142, 0.479);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* ********** signup--section ***************** */
+.overlay{
+    background-color: rgba(0, 0, 0, 0.436);
+    width: 100%;
+    overflow-x: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -2;
+    opacity: 0;
+    transition: all 1s ease;
+}
+.signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 2s ease;
+    z-index: 9999;
+}
+.signup img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.sign-image{
+    width: 30vw;
+    background-color: var(--mainColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px 0px 10px;
+    height: 65vh;
+}
+.signup form{
+    width: 30vw;
+    color: black;
+    background-color: rgb(233, 233, 233);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 100%;
+    padding: 1.5rem 3rem;
+    box-shadow: 0px 0px 10px;
+    height: 65vh;
+}
+.signup h2{
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: var(--mainColor);
+    text-align: center;
+    font-weight: 900;
+}
+.signup span{
+    color: black;
+    background-color: rgb(236, 236, 236);
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 2vw;
+}
+.signup button{
+    background-color: var(--mainColor);
+    border: none;
+    padding: 10px 20px;
+    margin-top: 1rem;
+    width: 100%;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#login-btn{
+    color: purple;
+    cursor: pointer;
+}
+.signup input{
+    width: 100%;
+    height: 2rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    padding-left: 5px;
+}
+.login{
+    top: -100%;
+}
+.login h2{
+    margin-bottom: 3rem;
+}
+.login a{
+    color: purple;
+    cursor: pointer;
+}
+.overlay h2{
+    color: white;
+    text-align: center;
+    margin-top: 100vh;
+    font-size: 10rem;
+}
+/* ********** first--section ***************** */
+
+main{
+    padding: 0 70px;
+    overflow-x: hidden;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    text-align: center;
+}
+.first h1{
+    font-size: 3rem;
+    line-height: 4.5rem;
+}
+.first p {
+    font-size: 1.5rem;
+    color: rgb(85, 85, 85);
+    margin-top: 30px;
+    margin-bottom: 50px;
+    line-height: 2.2rem;
+}
+.first a{
+    margin-top: 40px;
+    margin-left: 50px;
+}
+.first a i{
+    font-size: 1.2rem;
+}
+.first a{
+    padding: 20px 15px;
+    border-radius: 10px;
+    background-color: rgb(245, 245, 245);
+}
+
+/* ********** second--section ***************** */
+
+.second{
+    text-align: center;
+    padding-top: 2rem;
+}
+.second h2{
+    font-size: 2rem;
+}
+.card-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    align-items: center;
+    margin-top: 50px;
+}
+.card{
+    width: 30%;
+}
+.card img{
+    width: 80%;
+}
+.card h3{
+    margin-top: 10px;
+}
+.card p{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    line-height: 1.4rem;
+}
+
+/* ********** third--section ***************** */
+
+.third{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding: 0 50px;
+}
+.tleft{
+    width: 50vw;
+}
+.tright{
+    width: 30vw;
+}
+.tleft img{
+    width: 100%;
+    border-radius: 3px;
+    transform: scaleX(-1);
+}
+.tright h2{
+    font-size: 2.5rem;
+    line-height: 3.2rem;
+}
+.tright p{
+    color: rgb(85, 85, 85);
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.6rem;
+    font-size: 1.2rem;
+}
+
+/* ********** fourth--section ***************** */
+
+.fourth{
+    text-align: center;
+    height: 100vh;
+    padding-top: 2rem;
+}
+.fourth h2{
+    font-size: 2rem;
+}
+.fourth p{
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    line-height: 1.4rem;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65%;
+}
+.scard{
+    background: rgb(214, 192, 255);
+    width: 28%;
+    border-radius: 20px;
+    padding: 3rem 15px 2rem 15px;
+}
+.scard h3{
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+.scard p{
+    color: rgb(85, 85, 85);
+    margin-bottom: 5rem;
+}
+.scard a{
+    color: var(--mainColor);
+    margin-bottom: 2rem;
+}
+.scard i{
+    color: var(--mainColor);
+    font-size: 3.5rem;
+}
+
+/* ********** fifth--section ***************** */
+
+.fifth{
+    border-radius: 40px;
+    background-color: var(--mainColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+    color: white;
+    margin-bottom: 10rem;
+}
+.fifth p{
+    margin-top: 1.2rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+.fifth h2{
+    font-size: 3rem;
+}
+
+/* ********** sixth--section ***************** */
+
+.sixth{
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    align-items: center;
+}
+.sleft{
+    width: 40%;
+}
+.sleft img{
+    width: 80%;
+    margin-left: 2rem;
+}
+.sleft h2{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+.sleft ul li{
+    margin-left: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.sleft h3{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.sright{
+    background-color: var(--mainColor);
+    color: white;
+    border-radius: 20px;
+    padding: 25px 20px;
+    width: 40%;
+}
+.sright h2{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.sright input, .sright textarea{
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.sright form p{
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+.sright textarea{
+    height: 25vh;
+    resize: none;
+    margin-bottom: 2rem;
+}
+#send-btn{
+    padding: 12px 27px;
+    font-weight: bold;
+    background-color: black; 
+    color: rgb(206, 206, 206);
+    border-radius: 5px;
+    transition: all ease .5s;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+#send-btn:hover{
+    color: rgb(0, 0, 0);
+    background: rgb(255, 240, 240);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+/* ********** last--section ***************** */
+
+.last{
+    margin: 10rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.last h2{
+    font-size: 3rem;
+    line-height: 4.5rem;
+    margin-bottom: 2rem;
+}
+.last p{
+    font-weight: bold;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+}
+.lleft img{
+    width: 100%;
+}
+.lleft{
+    width: 30%;
+}
+.lright{
+    width: 50%;
+}
+
+/* ********** footer--section ***************** */
+
+footer{
+    background-color: rgb(24, 23, 23);
+    padding: 3rem 7rem;
+    color: white;
+    border: 2px solid black;
+    width: 100%;
+    overflow: hidden;
+}
+.fleft h2{
+    background-color: white;
+    font-size: 2rem;
+    display: inline;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    border: 1px solid grey;
+    box-shadow: 1px 1px 4px 3px rgba(142, 142, 142, 0.479);
+}
+.fleft{
+    width: 30%;
+}
+.fleft p{
+    margin-top: 3rem;
+}
+.fmiddle a, .fright a{
+    color: rgb(178, 178, 178);
+    display: block;
+    margin: 1rem 0;
+    transition: .5s ease;
+}
+.fmiddle a:hover, .fright a:hover{
+    color: white;
+}
+.fcontainer{
+    display: flex;
+    justify-content: space-between;
+}
+footer hr{
+    margin: 2rem 0;
+}
+.fmiddle h2, .fright h2{
+    font-size: 1.5rem;
+}
+.fmiddle a, .fright a{
+    font-size: 1.1rem;
+}
+footer p{
+    font-size: 1.2rem;
+}
+.links-two{
+    display: flex;
+    gap: 10rem;
+}
+/* **************Responsive--Nav***************** */
+.ri-menu-fold-line{
+    display: none;
+    font-size: 2rem;
+}
+.hamburger{
+    list-style: none;
+    background-color: rgb(44, 39, 39);
+    padding: 2rem 0;
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    right: -200%;
+}
+.hamburger li{
+    color: white;
+    text-align: center;
+    background-color: rgb(26, 25, 25);
+    margin: 1rem 0;
+    padding: 5vw 0;
+}
+.hamburger li:hover{
+    background: transparent;
+}
+.hamburger li a{
+    color: white;
+    font-size: 4vw;
+}
+.hamburger i{
+    color: white;
+    font-weight: bold;
+    font-size: 7vw;
+    position: relative;
+    left: 90%;
+}
+.hamburger button{
+    margin-top: 5vw;
+    padding: 5vw 0;
+    width: 100%;
+    font-size: 4vw;
+    box-shadow: none;
+}
+
+/* **************scrollbar-queries***************** */
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent, var(--mainColor));
+    transition: .5s;
+}
+::-webkit-scrollbar-button{
+    background: rgb(33, 32, 32);
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent, black);
+}
+
+/* **************Media-queries***************** */
+
+ @media screen and (max-width: 1024px) { /*for tablets */
+
+    /* ****************Header-section*************** */
+    header .collapse{
+        display: none;
+    }
+    .ri-menu-fold-line{
+        display: block;
+        font-size: 3rem;
+    }
+    header h2 a{
+        font-size: 3rem;
+    }
+    .hamburger button{
+        background-color: var(--mainColor);
+    }
+    /* *************Signup-section**************** */
+    
+    .sign-image{
+        width: 45vw;
+    }
+    .signup form{
+        width: 45vw;
+    }
+    .signup h2{
+        font-size: 3.5rem;
+        margin: 5rem 0;
+    }
+    .signup span{
+        font-size: 2rem;
+    }
+    .signup input{
+        height: 4rem;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .signup form p{
+        font-size: 1.2rem;
+    }
+    .signup form button{
+        margin-top: 5rem;
+        height: 4rem;
+        font-size: 1.5rem;
+    }
+    /* **********First-section************* */
+    .first h1{
+        font-size: 3.2rem;
+    }
+    .first p{
+        font-size: 2rem;
+    }
+    .main-btn{
+        padding: 2rem 3rem;
+        font-size: 1.3rem;
+    }
+    .first a{
+        padding: 2.1rem 3.1rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    /* **********second-section************* */
+    .second h2{
+        font-size: var(--secondHeading);
+    }
+    .card-wrapper{
+        flex-direction: column;
+    }
+    .second .card{
+        width: 100%;
+    }
+    .second .card img{
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .second .card h3{
+        font-size: 3rem;
+    }
+    .second .card p{
+        font-size: 2rem;
+        line-height: 2.5rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+    /* **********third-section************* */
+    .tleft{
+        width: 90vw;
+    }
+    .tright{
+        width: 90vw;
+    }
+    .third{
+        flex-direction: column;
+    }
+    .tright h2{
+        font-size: var(--secondHeading);
+        line-height: 5rem;
+    } 
+    .tright p{
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    /* **********fourth-section************* */
+    .fourth{
+        height: auto;
+    }
+    .fourth h2{
+        font-size: var(--secondHeading);
+    }
+    .fourth > p{
+        margin-top: 3rem;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .fourth .wrapper{
+        flex-direction: column;
+    }
+    .fourth .scard{
+        width: 70vw;
+        height: 50vh;
+        margin-bottom: 3rem;
+    }
+    .scard h3{
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
+    .scard i{
+        font-size: 5rem;
+    }
+    .scard p{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-top: 3rem;
+    }
+    .scard a{
+        font-size: 2rem;
+        line-height: 20vh;
+    }
+    /* **********fifth-section************* */
+    .fifth{
+        margin-top: 20vh;
+        height: 40vh;
+    }
+    .fifth h2{
+        font-size: 3rem;
+    }
+    .fifth p{
+        font-size: 1.5rem;
+        margin-top: 3rem;
+    }
+    .fifth button{
+        margin-top: 3vh;
+    }
+    /* **********sixth-section************* */
+    .sixth{
+        flex-direction: column;
+        height: auto;
+    }
+    .sleft{
+        width: 100%;
+        margin-bottom: 10rem;
+    }
+    .sleft h2{
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+    .sleft h3{
+        font-size: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .sleft ul li{
+        font-size: 1.5rem;
+    }
+    .sright{
+        width: 90vw;
+        padding: 5rem 2rem;
+    }
+    .sright h2{
+        font-size: 3rem;
+    }
+    .sright input{
+        height: 4rem;
+    }
+    .sright form p{
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+    .sright button{
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+    /* **********last-section************* */
+    .last{
+        flex-direction: column;
+    }
+    .lleft{
+        width: 80vw;
+    }
+    .lright{
+        width: 90vw;
+    }
+    .lright h2{
+        font-size: 3rem;
+    }
+    .lright p{
+        font-size: 1.5rem;
+    }
+    /* **********footer-section************* */
+    footer{
+        padding: 2rem 1rem;
+    }
+    footer > p{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .fleft p{
+        margin-top: 0;
+        margin-left: 3rem;
+        font-size: 1.5rem;
+    }
+    .fcontainer{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .fleft{
+        display: flex;
+        width: 100%;
+    }
+    .links-two{
+        width: 100%;
+        justify-content: space-around;
+        gap: 0px;
+    }
+    .links-two h2{
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+    .links-two a{
+        font-size: 1.5rem;
+    }
+}
+
+ @media screen and (max-width: 768px) { /* for mobile */
+    /* header */
+    header{
+        padding: 0 5vw;
+    }
+    .ri-menu-fold-line{
+        font-size: 1.5rem;
+    }
+    header h2 a{
+        font-size: 1.5rem;
+    }
+    /* signup modal */
+    .sign-image{
+        display: none;
+    }
+    .signup form span{
+        font-size: 5vw;
+    }
+    .signup form{
+        width: 95vw;
+        overflow: hidden;
+        height: 130vw;
+        border-radius: 3vw;
+    }
+    .signup form button{
+        padding: 2vw 0;
+        font-size: 4vw;
+        height: 10vw;
+        margin-top: 17vw;
+    }
+    .signup h2{
+        font-size: 7vw;
+        margin: 7vw 0;
+    }
+    .signup input{
+        width: 100%;
+        height: 10vw;
+        font-size: 4vw;
+        margin-bottom: 5vw;
+    }
+    .signup form p{
+        font-size: 3vw;
+    }
+    /* first-section */
+    .main-btn{
+        padding: 3vw 4vw;
+        font-size: 3vw;
+    }
+    main{
+        padding: 0 5vw;
+    }
+    .first{
+        height: 80vh;
+    }
+    .first a{
+        padding: 3vw 4vw;
+        font-size: 3vw;
+    }
+    .first a i{
+        font-size: 3vw;
+    }
+    .first h1{
+        font-size: 10vw;
+        line-height: 12vw;
+    }
+    .first p{
+        font-size: 5vw;
+        line-height: 6vw;
+        margin-top: 7vw;
+    }
+
+    /* second-section */
+
+    .second h2{
+        font-size: 8vw;
+    }
+    .card-wrapper{
+        padding: 0;
+    }
+    .second .card h3{
+        font-size: 6vw;
+        margin-top: 5vw;
+        font-weight: bold;
+    }
+    .second .card p{
+        font-size: 5vw;
+        line-height: 6vw;
+    }
+    #les-margin{
+        margin-bottom: 1vw;
+    }
+    /* third-section */
+    .third {
+        height: auto;
+        padding-top: 30vw;
+        gap: 8vw;
+    }
+    .tright h2{
+        font-size: 8vw;
+        line-height: 10vw;
+    }
+    .tright p{
+        font-size: 5vw;
+        line-height: 6vw;
+        margin-top: 8vw;
+    }
+    /* fourth-section */
+    .fourth h2{
+        font-size: 8vw;
+        line-height: 10vw;
+        margin-top: 30vw;
+    }
+    .fourth p{
+        font-size: 5vw;
+        line-height: 6vw;
+    }
+    .wrapper .scard{
+        height: auto;
+        width: 95%;
+        padding-bottom: 0px;
+    }
+    .wrapper .scard i{
+        font-size: 10vw;
+    }
+    .wrapper .scard h3{
+        font-size: 6vw;
+        margin-top: 8vw;
+    }
+    .wrapper .scard p{
+        font-size: 5vw;
+        margin-top: 6vw;
+        margin-bottom: 0;
+    }
+    .wrapper .scard a{
+        font-size: 5vw;
+    }
+
+    /* fifth-section */
+    
+    .fifth{
+        height: auto;
+        padding: 12vw 0;
+        border-radius: 5vw;
+    }
+    .fifth h2{
+        font-size: 5vw;
+    }
+    .fifth p{
+        font-size: 3vw;
+        margin-top: 5vw;
+        margin-bottom: 3vw;
+    }
+    .fifth button{
+        font-size: 2.5vw;
+    }
+
+    /* sixth-section */
+
+    .sleft img{
+        margin: 0;
+        width: 100%;
+    }
+    .sleft h2{
+        font-size: 8vw;
+    }
+    .sleft h3{
+        font-size: 6vw;
+    }
+    .sleft ul li{
+        font-size: 5vw;
+    }
+    .sleft button{
+        font-size: 4vw;
+    }
+    .sright{
+        border-radius: 2vw;
+        padding: 10vw 5vw;
+    }
+    .sright h2{
+        font-size: 8vw;
+        text-align: center;
+    }
+    .sright form p{
+        font-size: 4vw;
+    }
+    .sright form input{
+        font-size: 4vw;
+        height: auto;
+        padding: 2vw 0;
+    }
+    .sright form textarea{
+        font-size: 4vw;
+        padding: 2vw 0;
+    }
+    .sright button{
+        font-size: 4vw;
+        margin-bottom: 0;
+    }
+    /* last-section */
+    .lright h2{
+        font-size: 8vw;
+        line-height: 9vw;
+        margin-top: 8vw;
+    }
+    .lright p{
+        font-size: 5vw;
+    }
+    .lright button{
+        font-size: 4vw;
+    }
+    
+    /* footer-section */
+
+    footer > p{
+        font-size: 4vw;
+    }
+    .fleft{
+        display: block;
+    }
+    .fleft h2{
+        font-size: 6vw;
+        margin: 5vw 0;
+
+    }
+    .fleft p{
+        margin: 0;
+        margin-top: 10vw;
+        font-size: 5vw;
+    }
+    .links-two h2{
+        font-size: 6vw;
+        margin-bottom: 3vw;
+        margin-top: 8vw;
+    }
+    .links-two a{
+        font-size: 4vw;
+    }
+    .links-two{
+        justify-content: space-between;
+    }
+}
